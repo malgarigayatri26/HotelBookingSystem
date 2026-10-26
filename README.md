@@ -1,56 +1,51 @@
-
 # Hotel Booking Management System
 
 ## About the Project
-A console-based hotel booking application developed using Java,
-MySQL, and JDBC. It allows users to view rooms, register customers,
-check room availability, book rooms, view bookings, and cancel reservations.
+The Hotel Booking Management System is a Java-based console application that allows users to view hotel rooms, check room availability, register customers, book rooms, view bookings, and cancel reservations.
+
+## Features
+- View all hotel rooms
+- Check room availability for selected dates
+- Register new customers
+- Book hotel rooms
+- View customer bookings
+- Cancel bookings
+- Store data in a MySQL database
 
 ## Technologies Used
 - Java 21
 - MySQL
 - JDBC
 - Eclipse IDE
-- MySQL Connector/J
-
-## Features
-1. View all hotel rooms
-2. Check room availability for selected dates
-3. Register customers
-4. Book hotel rooms
-5. Calculate booking price based on the number of nights
-6. View customer bookings
-7. Cancel confirmed bookings
-8. Store booking information in MySQL
-
-## Database Tables
-- `rooms` - Stores room numbers, types, prices, and capacities
-- `customers` - Stores customer details
-- `bookings` - Stores reservation dates, prices, and statuses
+- Git and GitHub
 
 ## Database Setup
-1. Install MySQL Server and MySQL Workbench.
-2. Create a database named `hotel_booking`.
-3. Create the `rooms`, `customers`, and `bookings` tables.
-4. Insert sample room records into the `rooms` table.
-5. Configure the database credentials in `DBConnection.java`.
-
-## JDBC Configuration
-Update the connection URL, username, and password in `DBConnection.java`
-to match your local MySQL setup.
-
-Add MySQL Connector/J to the project's Java Build Path.
+1. Install MySQL Server.
+2. Open MySQL Workbench.
+3. Open and execute `database.sql`.
+4. Configure the database username and password using the `DB_USERNAME` and `DB_PASSWORD` environment variables.
 
 ## How to Run
-1. Open the project in Eclipse.
-2. Ensure MySQL Server is running.
-3. Verify the JDBC driver and database connection settings.
-4. Run `HotelBookingSystem.java` as a Java Application.
-5. Select an option from the console menu.
+1. Clone or download this repository.
+2. Import the project into Eclipse.
+3. Add MySQL Connector/J to the project's classpath.
+4. Configure the database environment variables.
+5. Run `HotelBookingSystem.java` as a Java Application.
 
-## Future Enhancements
-- Graphical user interface
-- Customer login and authentication
-- Online payment integration
-- Booking receipts
-- Admin dashboard
+## Project Structure
+```text
+HotelBookingSystem/
+├── src/
+│   └── hotelbooking/
+│       ├── DBConnection.java
+│       ├── RoomService.java
+│       ├── CustomerService.java
+│       ├── BookingService.java
+│       ├── BookingManagementService.java
+│       └── HotelBookingSystem.java
+├── database.sql
+└── README.md
+```
+
+## Author
+Malgari Gayatri
